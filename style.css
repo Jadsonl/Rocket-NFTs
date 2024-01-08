@@ -1,0 +1,397 @@
+/* Reset de estilos */
+* {
+  padding: 0;
+  margin: 0;
+  color: var( --text-color);
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  
+}
+
+:root {
+  --background-color: #0E0E0E;
+  --text-color: #FFFFFF;
+  --primary-color: #FF5B50;
+  --secondary-color: #252525;
+  --border-color: #5A5757;
+  --button-bg-color: #FFFFFF;
+  --button-text-color: #000000;
+  --promo-bg-color: #FF5B50;
+  --input-bg-color: #0D0D0D;
+  --footer-bg-color: #252525;
+  --bg-color-container: #252525 ;
+  --link-color: #5A5757;
+  --link-hover-color: #FFFFFF;
+}
+
+body{
+  background-color: var(--background-color);
+  overflow-x: hidden;
+}
+/* Estilos para o cabeçalho */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2.5em;
+}
+
+header nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+header p {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+span {
+  color: var(--primary-color);
+}
+
+header .connect-wallet-btn {
+  display: flex;
+  gap: 0.5em;
+  padding: 0.5em;
+  border: none;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  font-weight: bold;
+  font-size: 0.75em;
+  align-items: center;
+  cursor: pointer;
+}
+
+header .connect-wallet-btn h1 {
+  margin: 0 auto;
+}
+
+.nav-link:hover{
+  color: var(--primary-color);
+}
+
+/* Estilos para a seção de galeria */
+.gallery-section {
+  margin: 3.2em 2em 7em 2em;
+}
+
+.gallery-section .art-gallery#art-gallery1 {
+  margin-bottom: 4em;
+  display: flex;
+  gap: 40px;
+}
+
+.gallery-section .art-gallery#art-gallery2 {
+  margin-bottom: 4em;
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
+/* Estilos para a seção de introdução */
+.intro-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 1.5em;
+  margin: 4em 0 5em 5em;
+}
+
+.intro-section .intro-text {
+  padding-right: 1em;
+}
+
+.intro-section .intro-text p {
+  font-size: 18px;
+}
+
+.intro-section .avatar-group {
+  display: flex;
+  align-items: flex-end;
+  gap: 1em;
+  padding-top: 1.75em;
+}
+
+.intro-section .intro-content {
+  padding-left: 1em;
+}
+
+.intro-section .intro-img {
+  text-align: center;
+}
+
+.intro-section h2 {
+  font-size: 1.7234em;
+  font-weight: bold;
+}
+
+/* Estilos para a seção de estatísticas */
+.stats-section {
+  display: flex;
+  height: 660px;
+  margin-top: 50px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.stats-section .groupo2 {
+  border-left: 1px solid var(--border-color);
+}
+
+.stats-section .stats {
+  text-align: center;
+  grid-area: a;
+  margin: 0px 50px;
+}
+
+.stats-section .stat-number {
+  font-size: 5em;
+  font-weight: bold;
+  
+}
+
+.stats-section .stat-text {
+  margin-bottom: 3em;
+  font-size: 2em;
+}
+
+.stats-section .promo-group {
+  border-left: 1px solid var(--border-color);
+  position: relative;
+}
+
+.promo-card{
+  text-align: justify;
+  gap: 30px;
+  margin: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.stats-section .promo-group .promo-left,
+.stats-section .promo-group .promo-right {
+  display: flex;
+  flex-direction: column;
+}
+.other-details{
+  padding-top: 40px;
+  text-decoration: underline;
+  cursor: pointer;
+
+}
+.stats-section .promo-group img {
+  position: absolute;
+  bottom: 0px;
+}
+
+.line-mind{
+  margin: 50px;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+}
+.popular-artists h2 {
+  margin: 60px;
+  font-size: 50px;
+}
+
+.popular-artists .artists-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.artist-details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px 10px 0;
+}
+
+.popular-artists .left-container,
+.popular-artists .right-container {
+  /* Estilos para os containers esquerdo e direito */
+  padding: 0px 160px;
+}
+
+/* Adicione estilos conforme necessário para os detalhes do artista */
+
+
+/* ---- section artista ----  */
+
+.best-artists h2 {
+  padding: 100px 0px 50px 0px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.artist-container{
+  width: 275px;
+  height: 150px;
+  margin: 40px;
+  padding: 10px;
+}
+.best-artists .artist-container {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  border-radius: 10px;
+}
+
+.artist-container{
+  background-color: var(--bg-color-container);
+  font-size: 16px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.artist-container:hover {
+  background-color: var(--promo-bg-color);
+  
+}
+.artist-container:hover span {
+    color: white;
+  font-weight: bold;
+}
+.artist-group{
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+}
+
+/* ---- footer ----  */
+.footer{
+  background-color: var(--footer-bg-color);
+  height:509px;
+}
+.footer-artist{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 100px;
+}
+
+.top-footer{
+  display: flex;
+  padding: 46px;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+  align-items: center;
+}
+.footer .top-footer .back-top-menu{
+
+  background-color: #FF5B50;
+  text-align: end;
+  
+}
+.back-top-menu{
+   cursor: pointer;
+}
+
+.logo-footer{
+  font-size: 40px;
+  font-weight: bold;
+}
+.footer .back-top-menu img {
+  transform: rotate(-30deg); 
+  height: 60px;
+}
+
+.footer .back-top-menu .arrow path{
+  filter: invert(1); 
+}
+
+input{
+  padding: 10px;
+  background-color: var(--input-bg-color);
+  border: none;
+}
+.buttom-footer{
+  background-color: #FFFFFF;
+  color: black;
+  padding: 8px;
+  border: none;
+}
+
+.mid-footer{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-bottom: 1px solid var(--border-color);
+}
+.footer-right{
+  border-right: 1px solid var(--border-color);
+  padding: 70px;
+}
+.footer-right h2{
+  padding-bottom: 20px;
+  
+  
+}
+.sobre-footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.lista-footer li:nth-child(1) {
+  font-weight: bold;
+  color: white;
+}
+
+.lista-footer li{
+  font-size: 18px;
+  padding: 5px;
+}
+
+.lista-footer li a{
+  color: #5A5757;
+}
+
+.lista-footer li a:hover{
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.bottom-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px 0px;
+}
+
+.bottom-footer p{
+  color: #5A5757;
+}
+
+.social-links{
+  display: flex;
+  gap: 30px;
+}
+
+.social-icon{
+  width: 30px;
+  height: 30px;
+}
+
+.contato{
+  background-color: rgb(41 224 169);
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border-radius: 15px;
+  padding: 8px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.contato:hover{
+  border: 1px solid white;;
+}
+
+.social-links img path{
+  filter: invert(1); 
+}
+
