@@ -12,3 +12,7 @@ O Rocket NFTs é um mercado de tokens não fungíveis (NFTs) simplificado, onde 
 
    ```bash
    git clone https://github.com/seu-usuario/rocket-nfts-estudo.git
+
+## Acessar Projeto
+
+<a href="https://jadsonl.github.io/Rocket-NFTs/" target="_blank" align="center" >Abrir Projeto</a>
